@@ -1,32 +1,22 @@
-# Chatbot UI
+# WesBot UI
 
-The open-source AI chat app for everyone.
+WesBot UI based on McKay Wrigley's chatbot-ui.
 
-<img src="./public/readme/screenshot.png" alt="Chatbot UI" width="600">
+<img src="./public/readme/screenshot.png" alt="WesBot" width="600">
 
 ## Demo
 
 View the latest demo [here](https://x.com/mckaywrigley/status/1738273242283151777?s=20).
 
-## Updates
-
-Hey everyone! I've heard your feedback and am working hard on a big update.
-
-Things like simpler deployment, better backend compatibility, and improved mobile layouts are on their way.
-
-Be back soon.
-
--- Mckay
-
 ## Official Hosted Version
 
-Use Chatbot UI without having to host it yourself!
+Use WesBot without having to host it yourself!
 
-Find the official hosted version of Chatbot UI [here](https://chatbotui.com).
+Find the official hosted version of WesBot [here](https://chatbotui.com).
 
 ## Sponsor
 
-If you find Chatbot UI useful, please consider [sponsoring](https://github.com/sponsors/mckaywrigley) me to support my open-source work :)
+If you find WesBot useful, please consider [sponsoring](https://github.com/sponsors/mckaywrigley) me to support my open-source work :)
 
 ## Issues
 
@@ -48,13 +38,13 @@ Odds are if you have a question, someone else has the same question.
 
 ## Legacy Code
 
-Chatbot UI was recently updated to its 2.0 version.
+WesBot was recently updated to its 2.0 version.
 
 The code for 1.0 can be found on the `legacy` branch.
 
 ## Updating
 
-In your terminal at the root of your local Chatbot UI repository, run:
+In your terminal at the root of your local WesBot repository, run:
 
 ```bash
 npm run update
@@ -70,7 +60,7 @@ to apply the latest migrations to your live database.
 
 ## Local Quickstart
 
-Follow these steps to get your own Chatbot UI instance running locally.
+Follow these steps to get your own WesBot instance running locally.
 
 You can watch the full video tutorial [here](https://www.youtube.com/watch?v=9Qq3-7-HNgw).
 
@@ -82,7 +72,7 @@ git clone https://github.com/mckaywrigley/chatbot-ui.git
 
 ### 2. Install Dependencies
 
-Open a terminal in the root directory of your local Chatbot UI repository and run:
+Open a terminal in the root directory of your local WesBot repository and run:
 
 ```bash
 npm install
@@ -123,7 +113,7 @@ scoop install supabase
 
 #### 3. Start Supabase
 
-In your terminal at the root of your local Chatbot UI repository, run:
+In your terminal at the root of your local WesBot repository, run:
 
 ```bash
 supabase start
@@ -133,7 +123,7 @@ supabase start
 
 #### 1. Environment Variables
 
-In your terminal at the root of your local Chatbot UI repository, run:
+In your terminal at the root of your local WesBot repository, run:
 
 ```bash
 cp .env.local.example .env.local
@@ -166,19 +156,19 @@ Follow the instructions [here](https://github.com/jmorganca/ollama#macos).
 
 ### 6. Run app locally
 
-In your terminal at the root of your local Chatbot UI repository, run:
+In your terminal at the root of your local WesBot repository, run:
 
 ```bash
 npm run chat
 ```
 
-Your local instance of Chatbot UI should now be running at [http://localhost:3000](http://localhost:3000). Be sure to use a compatible node version (i.e. v18).
+Your local instance of WesBot should now be running at [http://localhost:3000](http://localhost:3000). Be sure to use a compatible node version (i.e. v18).
 
 You can view your backend GUI at [http://localhost:54323/project/default/editor](http://localhost:54323/project/default/editor).
 
 ## Hosted Quickstart
 
-Follow these steps to get your own Chatbot UI instance running in the cloud.
+Follow these steps to get your own WesBot instance running in the cloud.
 
 Video tutorial coming soon.
 
@@ -188,7 +178,7 @@ Repeat steps 1-4 in "Local Quickstart" above.
 
 You will want separate repositories for your local and hosted instances.
 
-Create a new repository for your hosted instance of Chatbot UI on GitHub and push your code to it.
+Create a new repository for your hosted instance of WesBot on GitHub and push your code to it.
 
 ### 2. Setup Backend with Supabase
 
@@ -226,14 +216,14 @@ We recommend turning off "Confirm email" for your own personal instance.
 
 #### 4. Connect to Hosted DB
 
-Open up your repository for your hosted instance of Chatbot UI.
+Open up your repository for your hosted instance of WesBot.
 
 In the 1st migration file `supabase/migrations/20240108234540_setup.sql` you will need to replace 2 values with the values you got above:
 
 - `project_url` (line 53): Use the `Project URL` value from above
 - `service_role_key` (line 54): Use the `Service role key` value from above
 
-Now, open a terminal in the root directory of your local Chatbot UI repository. We will execute a few commands here.
+Now, open a terminal in the root directory of your local WesBot repository. We will execute a few commands here.
 
 Login to Supabase by running:
 
@@ -261,7 +251,7 @@ Your hosted database should now be set up!
 
 Go to [Vercel](https://vercel.com/) and create a new project.
 
-In the setup page, import your GitHub repository for your hosted instance of Chatbot UI. Within the project Settings, in the "Build & Development Settings" section, switch Framework Preset to "Next.js".
+In the setup page, import your GitHub repository for your hosted instance of WesBot. Within the project Settings, in the "Build & Development Settings" section, switch Framework Preset to "Next.js".
 
 In environment variables, add the following from the values you got above:
 
@@ -281,7 +271,7 @@ For the full list of environment variables, refer to the '.env.local.example' fi
 
 Click "Deploy" and wait for your frontend to deploy.
 
-Once deployed, you should be able to use your hosted instance of Chatbot UI via the URL Vercel gives you.
+Once deployed, you should be able to use your hosted instance of WesBot via the URL Vercel gives you.
 
 ## Contributing
 
